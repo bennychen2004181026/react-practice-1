@@ -7,7 +7,7 @@ export const Balance = () => {
     useEffect(() => {
         const totalAmount = transactions.map(transaction => transaction.amount).reduce((acc, curr) => acc + curr, 0).toFixed(2)
         setBalance(totalAmount)
-    }, [])
+    }, [transactions])
     return (
         <>
             <h4>Your Balance</h4>
