@@ -1,8 +1,8 @@
 import React, { createContext, useReducer } from 'react'
-import { AppReducer } from './AppReducer'
+import  AppReducer from './AppReducer'
 
 const intitialState = {
-    transaction: [
+    transactions: [
         { id: 1, text: 'Flower', amount: -20 },
         { id: 2, text: 'Salary', amount: 300 },
         { id: 2, text: 'Book', amount: -10 }
